@@ -2116,6 +2116,23 @@ p#tags span.date-post a:hover, #article p a:hover, #link_footer a:hover, #links-
 h2.title, a.theme, form small, form small a, .contact-desc a{color: #fff}
 .panel-body, .panel-body p, .panel-body a{color: #000}
 #SIiframe-plugin{ background: #fff !important; padding: 20px !important; border-radius: 5px }
+center#paypal button[type="submit"] {
+    background: #019CDE;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+center#paypal button[type="submit"]:hover { opacity: 0.6 }
+form[name="order"] > input[name="SAVE"] {
+  background: #B5062D; border: medium none; padding: 10px; border-radius: 5px; color: #fff;
+}
+form[name="order"] > input[name="SAVE"]:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
 @media screen and (max-width: 360px) {
   #logo img {
     max-width: 100%;

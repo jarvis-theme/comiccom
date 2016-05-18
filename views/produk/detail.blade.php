@@ -234,7 +234,7 @@
             </div>
             @endif
 
-            {{pluginTrustklik()}}
+            {{ pluginComment(product_url($produk), @$produk) }}
         </div> 
     </div>
 </div>
