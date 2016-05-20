@@ -112,7 +112,7 @@
                         <label class="control-label"> Rekening Tujuan:</label>
                         <select name='bank' class="form-control">
                             <option value=''>-- Pilih Bank Tujuan --</option>
-                            @foreach (list_banks() as $bank)
+                            @foreach ($banktrans as $bank)
                             <option value="{{$bank->id}}">{{$bank->bankdefault->nama}} - {{$bank->noRekening}} - A/n {{$bank->atasNama}}</option>
                             @endforeach
                         </select>
@@ -169,9 +169,8 @@
         @endif 
       
         @if($order->jenisPembayaran==2)
-            <br>
             <center>
-                <h3>{{trans('content.step5.confirm_btn')}} Via Paypal</h3><br>
+                <h2><b>{{trans('content.step5.confirm_btn')}} Paypal</b></h2><br>
                 <p>{{trans('content.step5.paypal')}}</p>
             </center>
             <center id="paypal">{{$paypalbutton}}</center>
@@ -179,7 +178,7 @@
         @elseif($order->jenisPembayaran == 4) 
             @if(($checkouttype==1 && $order->status < 2) || ($checkouttype==3 && ($order->status!=6)))
             <center>
-                <h3>{{trans('content.step5.confirm_btn')}} iPaymu</h3><br>
+                <h2><b>{{trans('content.step5.confirm_btn')}} iPaymu</b></h2><br>
                 <p>{{trans('content.step5.ipaymu')}}</p>
                 <a class="btn btn-info" href="{{url('ipaymu/'.$order->id)}}" target="_blank">{{trans('content.step5.ipaymu_btn')}}</a>
             </center>
@@ -187,21 +186,21 @@
             @endif
         @elseif($order->jenisPembayaran == 5 && $order->status == 0)
             <center>
-                <h3>{{trans('content.step5.confirm_btn')}} DOKU MyShortCart</h3><br>
+                <h2><b>{{trans('content.step5.confirm_btn')}} DOKU MyShortCart</b></h2><br>
                 <p>{{trans('content.step5.doku')}}</p><br>
                 {{ $doku_button }}
             </center>
             <br>
         @elseif($order->jenisPembayaran == 6 && $order->status == 0)
             <center>
-                <h3>{{trans('content.step5.confirm_btn')}} Via Bitcoin</h3><br>
+                <h2><b>{{trans('content.step5.confirm_btn')}} Bitcoin</b></h2><br>
                 <p>{{trans('content.step5.bitcoin')}}</p>
                 {{$bitcoinbutton}}
             </center>
             <br>
         @elseif($order->jenisPembayaran == 8 && $order->status == 0)
             <center>
-                <h3>{{trans('content.step5.confirm_btn')}} Via Veritrans</h3><br>
+                <h2>{{trans('content.step5.confirm_btn')}} Veritrans</h2><br>
                 <p>{{trans('content.step5.veritrans')}}</p>
                 <button class="btn btn-info" onclick="location.href='{{ $veritrans_payment_url }}'">{{trans('content.step5.veritrans_btn')}}</button>
             </center>
