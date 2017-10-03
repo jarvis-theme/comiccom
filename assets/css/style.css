@@ -1920,7 +1920,7 @@ footer .copyright p {
 }
 
 #tags {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 #btm-margin {
@@ -2132,7 +2132,10 @@ form[name="order"] > input[name="SAVE"]:hover {
   opacity: 0.8;
   cursor: pointer;
 }
-
+.picmix { width: 30px; }
+.midtrans { padding: 8px; background: #f8f8f8; }
+.blog-img { margin: 5px 0; max-width: 100%; }
+.blog img { max-width: 100%; }
 
 @media screen and (max-width: 360px) {
   #logo img {

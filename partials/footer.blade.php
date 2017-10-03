@@ -75,6 +75,13 @@
                             <a href="{{url($kontak->ig)}}" title="Instagram"><span class="fa-stack fa"><i class="fa fa-circle fa-stack-2x" id="ig-circle"></i><i class="fa fa-instagram fa-stack-1x fa-inverse" id="ig"></i></span></a>
                         </li>
                         @endif
+                        @if(!empty($kontak->picmix))
+                        <li>
+                            <a href="{{url($kontak->picmix)}}" title="Picmix" target="_blank">
+                                <img class="picmix" src="//d3kamn3rg2loz7.cloudfront.net/blogs/event/icon-picmix.png">
+                            </a>
+                        </li>
+                        @endif
                     </ul>
                     <div class="clr"></div>
                 </div>
@@ -121,7 +128,7 @@
                     <img src="{{url('img/bank/doku.jpg')}}" alt="Doku" title="Doku">
                     @endif
                     @if(count(list_veritrans()) > 0 && list_veritrans()->status == 1 && list_veritrans()->type == 1)
-                    <img src="{{url('img/bank/veritrans.png')}}" alt="Veritrans" title="Veritrans">
+                    <img src="{{url('img/bank/midtrans.png')}}" class="midtrans" alt="Midtrans" title="Midtrans">
                     @endif
                 </div>
                 <div class="clr"></div>

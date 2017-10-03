@@ -52,7 +52,7 @@
                             </small>
                         </ul>
                         <div class="col-xs-12 col-sm-4 sosial-share" id="btm-margin">{{sosialShare(blog_url($detailblog))}}</div>
-                        <p id="top-margin">{{$detailblog->isi}}</p>
+                        <p id="top-margin" class="blog">{{$detailblog->isi}}</p>
                     </div>
                     <hr>
                     <div class="navigate comments clearfix">
