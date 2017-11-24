@@ -159,7 +159,7 @@
                             @endif
                             <div class="quantity">
                                 <div class="form-group">
-                                    <label class="control-label">Quantity :</label>
+                                    <label class="control-label">Jumlah :</label>
                                     <div class="qty-block">
                                         <a href="#" data-field-qty="qty" class="product_quantity_down" field='qty'>
                                             <span><i class="icon-minus"></i></span>
@@ -234,7 +234,9 @@
             </div>
             @endif
 
-            {{ pluginComment(product_url($produk), @$produk) }}
+            <div class="comment">
+                {{ pluginComment(product_url($produk), @$produk) }}
+            </div>
         </div> 
     </div>
 </div>

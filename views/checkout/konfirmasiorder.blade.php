@@ -91,7 +91,7 @@
             </table>
         </div>
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 col-md-offset-3">
             @if($order->jenisPembayaran==1 && $order->status == 0)
                 <h2>{{trans('content.step5.confirm_btn')." ".trans('content.step3.transfer')}}</h2>
                 @if($checkouttype==1) 

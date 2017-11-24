@@ -45,8 +45,8 @@
             </div>
             @endforeach
         </div>
-        <div id="center_column" class="col-lg-9 col-xs-12 col-sm-8">
-            <h1>{{$data->judul}}</h1>
+        <div class="col-lg-9 col-xs-12 col-sm-8">
+            <h1 class="bold">{{$data->judul}}</h1>
         	<div class="row">
                 <article class="col-lg-12 col-md-12 col-xs-12">
                     <h3>{{$data->up}}</h3>

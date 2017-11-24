@@ -40,18 +40,18 @@
             </div>
             @endforeach
         </div>
-        <div id="center_column" class="col-lg-9 col-xs-12 col-sm-8">
+        <div class="col-lg-9 col-xs-12 col-sm-8">
             <div class="product-list">
                 <section class="content">
                     <div class="entry">
                         <h2 class="title" id="margin-title">{{$detailblog->judul}}</h2>
-                        <ul class="col-xs-12 col-sm-8" id="btm-margin">
+                        <ul class="col-xs-12 col-sm-6" id="btm-margin">
                             <small>
                                 <span class="date-post"><i class="fa fa-calendar"></i> {{waktuTgl($detailblog->created_at)}}</span>&nbsp;&nbsp;
                                 <span class="date-post"><i class="fa fa-tags"></i> <a href="{{blog_category_url(@$detailblog->kategori)}}">{{@$detailblog->kategori->nama}}</a></span>
                             </small>
                         </ul>
-                        <div class="col-xs-12 col-sm-4 sosial-share" id="btm-margin">{{sosialShare(blog_url($detailblog))}}</div>
+                        <div class="col-xs-12 col-sm-6 sosial-share" id="btm-margin">{{sosialShare(blog_url($detailblog))}}</div>
                         <p id="top-margin" class="blog">{{$detailblog->isi}}</p>
                     </div>
                     <hr>
@@ -70,7 +70,7 @@
                         @endif
                     </div>
                     <hr>
-                    <div>
+                    <div class="bgwhite">
                         {{$fbscript}}
                         {{fbcommentbox(blog_url($detailblog), '100%', '5', 'light')}}
                     </div>

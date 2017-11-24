@@ -1767,7 +1767,7 @@ footer .copyright p {
   footer #newsletter_footer form {
     float: none;
     margin: 0 auto;
-    width: 275px;
+    max-width: 320px;
   }
 
   footer #social ul {
@@ -1793,7 +1793,7 @@ footer .copyright p {
   }
 
   footer #bottom-footer #payment_footer img {
-    margin: 0 auto;
+    margin: 2px auto;
   }
 }
 
@@ -1979,18 +1979,6 @@ footer .copyright p {
   font-weight: 600
 }
 
-@media screen and (max-width: 639px) {
-  .product-list ul.grid li .image-container {
-    min-height: auto;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #payment_footer {
-    text-align: center;
-  }
-}
-
 .adv-third {
   text-align: center;
 }
@@ -2136,6 +2124,15 @@ form[name="order"] > input[name="SAVE"]:hover {
 .midtrans { padding: 8px; background: #f8f8f8; }
 .blog-img { margin: 5px 0; max-width: 100%; }
 .blog img { max-width: 100%; }
+.comment { background: #fff; padding: 15px; clear: both; }
+.pad0 { padding: 0; }
+.bold { font-weight: bold; }
+.sosial-share { padding: 0; }
+.bgwhite { background: #fff; }
+#adv-sidebar { text-align: center; }
+#adv-sidebar .img-responsive { display: inline-block; }
+#article p a.theme, .checkbox a { color: #5cb85c; }
+#article p a.theme:hover, .checkbox a:hover, .login small > a:hover { color: #ff0000; }
 
 @media screen and (max-width: 360px) {
   #logo img {
@@ -2150,9 +2147,24 @@ form[name="order"] > input[name="SAVE"]:hover {
     font-size: 13px !important;
   }
 }
-
+@media screen and (max-width: 639px) {
+  .product-list ul.grid li .image-container {
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  #payment_footer {
+    text-align: center;
+  }
+  #links-foot { text-align: center; }
+  footer #links-foot ul li { list-style: none; }
+}
 @media screen and (max-width: 768px) {
   footer #social ul {
     margin-top: 0;
   }
+  .input-newsletter { width: 66%; }
+}
+@media screen and (min-width: 768px) {
+  .sosial-share { text-align: right; }
 }

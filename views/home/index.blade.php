@@ -74,9 +74,10 @@
         </div>
         <div id="adv-home">
             <div class="row">
+                {{-- */ $i=vertical_banner()->count(); /* --}}
                 @foreach(vertical_banner() as $side_banner)
                 <div class="col-xs-12 col-sm-4">
-                    <div class="adv-third">
+                    <div class="{{$i>1?'adv-third':''}}">
                         <a href="{{$side_banner->url}}">
                             <img src="{{url(banner_image_url($side_banner->gambar))}}" alt="Info Promo" />
                         </a>

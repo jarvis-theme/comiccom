@@ -4,9 +4,9 @@
     {{generate_theme_css('comiccom/assets/css/bootstrap-custom.css')}}
     
     @if($tema->isiCss=='')  
-    {{generate_theme_css('comiccom/assets/css/style.css')}}
+    {{generate_theme_css('comiccom/assets/css/style.css?v=002')}}
     @else   
-    {{generate_theme_css('comiccom/assets/css/editstyle.css')}}
+    {{generate_theme_css('comiccom/assets/css/editstyle.css?v=002')}}
     @endif  
     
     <noscript>

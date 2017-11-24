@@ -14,7 +14,7 @@
             </form>
         </div>
         <div id="center_column" class="col-xs-12 col-sm-4 col-md-offset-2 col-lg-4">
-            <h2 class="title">Pelanggan Baru</h2><hr><br>
+            <h2 class="title">Pelanggan Baru</h2><hr>
             <p>Nikmati kemudahan berbelanja dengan mendaftar sebagai member.</p>
             <br>
             <div class="input-group">

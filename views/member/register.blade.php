@@ -1,16 +1,16 @@
 <div class="container">
 	<div class="breadcrumb"><p>Register</p></div>
 	<div class="inner-column row">
-        <div class="col-lg-3 col-xs-12 col-sm-4 pull-right">
-        </div>
-        <div id="center_column" class="col-lg-7 col-xs-12 col-sm-8">
-            {{Form::open(array('url'=>'member','method'=>'post','class'=>'form-horizontal'))}}
+		<div class="col-lg-3 col-xs-12 col-sm-4 pull-right">
+		</div>
+		<div id="center_column" class="col-lg-7 col-xs-12 col-sm-8">
+			{{Form::open(array('url'=>'member','method'=>'post','class'=>'form-horizontal'))}}
 				<div class="form-group">
 					<label for="inputName" class="col-lg-2">Nama</label>
 					<div class="col-lg-10">
 						<input type="text" class="form-control" id="inputName" name="nama" value="{{Input::old('nama')}}" required>
 					</div>
-				</div>                           
+				</div>
 				<div class="form-group">
 					<label for="inputEmail1" class="col-lg-2">Email</label>
 					<div class="col-lg-10">
@@ -58,7 +58,7 @@
 					<div class="col-lg-10">
 						<input type="text" class="form-control" id="inputpos1" name="kodepos" value="{{Input::old('kodepos')}}" >
 					</div>
-				</div>                      
+				</div>
 				<div class="form-group">
 					<label for="inputpho1" class="col-lg-2">Telepon</label>
 					<div class="col-lg-10">
@@ -82,7 +82,7 @@
 					<div class="col-lg-offset-2 col-lg-10">
 						<div class="checkbox">
 							<label>
-								<input name='readme' value="1" type="checkbox"> Saya telah membaca dan menyetujui <a href="{{URL::to('service')}}" target="_blank" >Privacy Policy</a>
+								<input name="readme" value="1" type="checkbox" checked> Saya telah membaca dan menyetujui <a href="{{URL::to('service')}}" target="_blank" >Privacy Policy</a>
 							</label>
 						</div>
 					</div>
@@ -94,6 +94,6 @@
 					</div>
 				</div>
 			{{Form::close()}}
-	    </div>
-    </div>
+		</div>
+	</div>
 </div>
